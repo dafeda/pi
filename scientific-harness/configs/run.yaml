@@ -1,0 +1,21 @@
+# One live LLM pressure-inference experiment against fixed synthetic truth.
+# Reuse a saved GitHub Copilot login; select a Copilot chat model from the installed Pi catalog.
+# Keep credentials outside YAML; this operator config is never sent to the proposer.
+# output is relative to this YAML file, not the directory you run the command from.
+# Existing output is deleted before each run.
+output: ../runs/experiment-01
+# model: gpt-5.6-luna # this does not recover structural truth
+model: gpt-6.1-sol # this recovers structural truth
+
+# Optional settings use these defaults when omitted.
+# Realizations per hypothesis; at least two are required.
+realizations: 50
+# Inference seed; does not change truth/observations or seed the LLM.
+seed: 7
+# Candidate budget including the initial homogeneous hypothesis, not a required count.
+# Total simulator-call budget is derived as 5 * realizations * max_evaluations.
+max_evaluations: 3
+# LLM request budget.
+max_model_calls: 6
+# Catalog-estimated model cost budget in USD; not Copilot quota.
+max_model_cost_usd: 5.0

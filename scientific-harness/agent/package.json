@@ -1,0 +1,37 @@
+{
+	"name": "scientific-hypothesis-agent",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"check": "tsc --noEmit",
+		"run": "node --experimental-strip-types src/cli.ts",
+		"test:local": "node --experimental-strip-types --test test/*.test.ts"
+	},
+	"dependencies": {
+		"@earendil-works/pi-agent-core": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-agent-core-1.5.0-14e8fe8d78f8.tgz",
+		"@earendil-works/pi-ai": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-ai-1.5.0-b62e65e8088a.tgz",
+		"@earendil-works/pi-schema": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-schema-1.5.0-fbe5f8d52ae5.tgz"
+	},
+	"devDependencies": {
+		"@types/node": "22.19.19",
+		"typescript": "7.0.2"
+	},
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"overrides": {
+		"@bob/words": "file:./../../.artifacts/scientific-pi/tarballs/bob-words-1.0.0-68b0c2aaa233.tgz",
+		"@earendil-works/chord": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-chord-1.5.0-28a3c2b8f01f.tgz",
+		"@earendil-works/pi-agent-core": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-agent-core-1.5.0-14e8fe8d78f8.tgz",
+		"@earendil-works/pi-ai": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-ai-1.5.0-b62e65e8088a.tgz",
+		"@earendil-works/pi-codemode": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-codemode-1.5.0-3cb049675ec0.tgz",
+		"@earendil-works/pi-coding-agent": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-coding-agent-1.5.0-9f3ec2874b2e.tgz",
+		"@earendil-works/pi-durable": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-durable-1.5.0-8d88498ea442.tgz",
+		"@earendil-works/pi-env": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-env-1.5.0-c267fa6fcab5.tgz",
+		"@earendil-works/pi-mcp": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-mcp-1.5.0-ee9fc1618242.tgz",
+		"@earendil-works/pi-schema": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-schema-1.5.0-fbe5f8d52ae5.tgz",
+		"@earendil-works/pi-telemetry": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-telemetry-1.5.0-556ded715767.tgz",
+		"@earendil-works/pi-tui": "file:./../../.artifacts/scientific-pi/tarballs/earendil-works-pi-tui-1.5.0-e7a2aaac355e.tgz"
+	}
+}

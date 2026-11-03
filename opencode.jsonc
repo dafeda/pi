@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "papers": {
+        "type": "remote",
+        "url": "http://127.0.0.1:9380/api/v1/mcp",
+        "oauth": false,
+        "headers": {
+          "Authorization": "Bearer {file:.opencode/ragflow-api-key}"
+        }
+      }
+    }
+  }
+}
